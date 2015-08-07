@@ -89,3 +89,10 @@ vnoremap > >gv
 " enable matchit (e.g. for vim-ruby)
 runtime macros/matchit.vim
 
+" ctrlp.vim
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+let g:ctrlp_follow_symlinks=1 " 1 - follow but ignore looped internal symlinks to avoid duplicates.
+map <leader>t :CtrlP<cr>
+map <leader>b :CtrlPBuffer<cr>
+map <leader>r :CtrlPMRU<cr>
+
