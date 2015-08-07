@@ -1,3 +1,9 @@
+" Filetype plugin tells matchit about pairs and probably more.
+" This didn't work until I moved it before Pathogen.
+filetype on
+filetype indent on
+filetype plugin on
+
 " Start pathogen for managing plugins, etc.
 call pathogen#infect()
 
@@ -68,7 +74,14 @@ set wildignore+=vendor
 " *.md files are like *.markdown files
 au BufRead,BufNewFile *.md set filetype=markdown
 
+" These files are Ruby files
+au BufRead,BufNewFile *.rake set filetype=ruby
+au BufRead,BufNewFile *.thor set filetype=ruby
+
 " Reselect visual area when changing indent in visual mode (from @notahat)
 vnoremap < <gv
 vnoremap > >gv
+
+" enable matchit (e.g. for vim-ruby)
+runtime macros/matchit.vim
 
