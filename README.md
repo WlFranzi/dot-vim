@@ -30,6 +30,10 @@ For example:
     git add .
     git commit -m "Added vim-ruby plugin."
 
+## Extra dependencies
+
+* [ack](http://beyondgrep.com/)
+
 ## Learning Vim
 
 * `vimtutor`
