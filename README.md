@@ -7,6 +7,7 @@ Clone this repository locally (don't forget submodules):
     cd ~/workspace
     git clone git@github.com:yourname/dot-vim.git
     cd dot-vim
+    git submodule init
     git submodule update
 
 Set symbolic links to the vim config file and directory:
