@@ -42,6 +42,10 @@ set laststatus=2
 " Syntax highlighting
 syntax enable
 
+" Color scheme
+set background=dark
+colorscheme solarized
+
 " Misc
 set wildmode=longest,list,full
 set wildmenu
