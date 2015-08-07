@@ -96,3 +96,14 @@ map <leader>t :CtrlP<cr>
 map <leader>b :CtrlPBuffer<cr>
 map <leader>r :CtrlPMRU<cr>
 
+" NERDTree settings
+let g:NERDTreeChDirMode=2     " cwd follows NERDTree root
+let NERDTreeMapCWD=''         " because mapping to 'CD' adds delay to 'C' mapping
+                              "   and CD functionality is redundant when ChDirMode=2
+let NERDTreeMapOpenSplit='s'  " to match vim's C-w s
+let NERDTreeMapOpenVSplit='v' " to match vim's C-w v
+
+" Keyboard mappings
+map <Leader>n :NERDTree<CR>R
+map <Leader>N :NERDTreeFind<CR>R
+
